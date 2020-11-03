@@ -9,9 +9,7 @@ on:
 jobs:
   check-can-merge:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Runs a set of commands using the runners shell
+      # Check if merges/deploys have been disabled for this repo(for manual or operational reasons)
       - name: Merges/deploys allowed?
         uses: 1debit/mergebot@main

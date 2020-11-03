@@ -1,0 +1,9 @@
+{
+    "name": "Chime - chimebot merge check",
+    "description": "Adds a status check that fails if merges have been blocked for operational reasons",
+    "iconName": "chime",
+    "categories": [
+    ],
+    "filePatterns": [
+    ]
+}

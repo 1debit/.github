@@ -1,0 +1,17 @@
+name: Chimebot - Merge check
+
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+  check-can-merge:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Runs a set of commands using the runners shell
+      - name: Merges/deploys allowed?
+        uses: 1debit/mergebot@main

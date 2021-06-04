@@ -1,7 +1,7 @@
 {
     "name": "Chime - Add Dependency Owners",
     "description": "Checks for dependency updates, adds CODEOWNERS",
-    "iconName": "user-plus",
+    "iconName": "chime",
     "categories": [
     ],
     "filePatterns": [

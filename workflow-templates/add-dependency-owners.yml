@@ -26,7 +26,6 @@ jobs:
       - uses: ./.github/actions
         name: Add Dependency Owners
         with:
-          dependency: 1debit/chime-atlas
           token: ${{ secrets.MERGEBOT_GITHUB_TOKEN }}
         env:
           BUNDLE_GEMFILE: ./.github/actions/Gemfile

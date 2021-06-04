@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0 # need to include base branch to make comparison
+          fetch-depth: 0 # need to include base branch to call git diff
       - uses: actions/checkout@v2
         with:
           repository: 1debit/dependency_owners

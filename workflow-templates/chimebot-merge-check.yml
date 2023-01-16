@@ -10,14 +10,6 @@ jobs:
   check-can-merge:
     runs-on: ubuntu-latest
     steps:
-      # uses a hack/workaround to allow running shared action from private repo, via local checkout see:
-      #  https://github.community/t/github-action-action-in-private-repository/16063
-      - uses: actions/checkout@v2
-        with:
-          repository: 1debit/mergebot
-          ref: refs/heads/main
-          token: ${{ secrets.MERGEBOT_GITHUB_TOKEN }}
-          path: .github/actions/mergebot
-      # Check if merges/deploys have been disabled for this repo(for manual or operational reasons)
-      - name:  Merges/deploys allowed?
-        uses: ./.github/actions/mergebot
+      # Check if merges/deploys have been disabled for this repo (for manual or operational reasons)
+      - name: Merges/deploys allowed?
+        uses: 1debit/mergebot@v1

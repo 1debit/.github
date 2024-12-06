@@ -5,10 +5,12 @@ on:
     branches: [ $default-branch ]
   pull_request_target:
     branches: [ $default-branch ]
+  merge_group:
+    branches: [ $default-branch ]
 
 jobs:
   check-can-merge:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       # Check if merges/deploys have been disabled for this repo (for manual or operational reasons)
       - name: Merges/deploys allowed?
